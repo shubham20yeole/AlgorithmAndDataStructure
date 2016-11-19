@@ -1,11 +1,11 @@
 package LinkList;
 
-public class DoublyLinkedListPractice  {
+public class a_DoublyLinkedList  {
 	int n;
 	Node head;
 	Node tail;
 
-	public DoublyLinkedListPractice() {
+	public a_DoublyLinkedList() {
 		int item;
 		head = new Node();
 		tail = new Node();
@@ -40,34 +40,12 @@ public class DoublyLinkedListPractice  {
 //		System.out.println(", Head: "+head.item+", tail: "+tail.item);
 
 	}
-	public boolean palindrome(int size){
-		boolean result=false;
-		Node temp = head.next;
-		Node temp2 = tail.pre;
-		int r = size/2;
-		int l = size - r;
-//		System.out.println(r+", "+l);
-
-		while(r!=0 && l!=0){
-			if(temp.item == temp2.item) result = true;
-			else{
-				result = false;
-				break;
-			}
-			temp=temp.next;
-			temp2=temp2.pre;
-			r--;
-			l--;
-		}
-		return result;
-	}
 	public static void main(String[] args) {
-		DoublyLinkedListPractice dd = new DoublyLinkedListPractice();
+		a_DoublyLinkedList dd = new a_DoublyLinkedList();
 		dd.add(1);
 		dd.add(2);
 		dd.add(2);
 		dd.print();
-		System.out.println(dd.palindrome(dd.getSize()));
 	}
 
 

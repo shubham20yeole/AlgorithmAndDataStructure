@@ -1,11 +1,13 @@
+//Given a singly linked list, determine if its a palindrome. Return 1 or 0 denoting if its a palindrome or not, respectively.
+
 package LinkList;
 
-public class DoublyLinkedList  {
+public class b_Palindrome_check_DoublyLinkedList  {
 	int n;
 	Node head;
 	Node tail;
 
-	public DoublyLinkedList() {
+	public b_Palindrome_check_DoublyLinkedList() {
 		int item;
 		head = new Node();
 		tail = new Node();
@@ -37,7 +39,6 @@ public class DoublyLinkedList  {
 			System.out.print(printNode.item+" ");
 			printNode = printNode.next;
 		}
-//		System.out.println(", Head: "+head.item+", tail: "+tail.item);
 
 	}
 	public boolean palindrome(int size){
@@ -46,7 +47,6 @@ public class DoublyLinkedList  {
 		Node temp2 = tail.pre;
 		int r = size/2;
 		int l = size - r;
-//		System.out.println(r+", "+l);
 
 		while(r!=0 && l!=0){
 			if(temp.item == temp2.item) result = true;
@@ -62,12 +62,12 @@ public class DoublyLinkedList  {
 		return result;
 	}
 	public static void main(String[] args) {
-		DoublyLinkedList dd = new DoublyLinkedList();
+		b_Palindrome_check_DoublyLinkedList dd = new b_Palindrome_check_DoublyLinkedList();
 		dd.add(1);
 		dd.add(2);
 		dd.add(2);
 		dd.print();
-		System.out.println(dd.palindrome(dd.getSize()));
+		System.out.println("\n"+dd.palindrome(dd.getSize()));
 	}
 
 
