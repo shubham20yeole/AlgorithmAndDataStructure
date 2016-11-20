@@ -10,24 +10,24 @@ package LinkList;
 import LinkList.b_LinkedList_Palindrome_check_.Node;
 
 public class d_LinkedList_ReverseOrder {
-	
+
 	Node head;
 	Node tail;
 	int n;
-	
+
 	public d_LinkedList_ReverseOrder() {
-	head = new Node();
-	tail = new Node();
-	head.next = tail;
-	tail.prev = head;
+		head = new Node();
+		tail = new Node();
+		head.next = tail;
+		tail.prev = head;
 	}
-	
+
 	private class Node{
 		Node prev;
 		Node next;
 		int data;
 	}
-	
+
 	public void add(int data){
 		Node last = tail.prev;
 		Node x = new Node();
@@ -45,7 +45,7 @@ public class d_LinkedList_ReverseOrder {
 			System.out.print(printNode.data+" ");
 			printNode = printNode.next;
 		}
-System.out.println();
+		System.out.println();
 	}
 	public void printReverse(){
 		Node printNode = tail.prev;
