@@ -2,12 +2,12 @@
 
 package LinkList;
 
-public class b_Palindrome_check_DoublyLinkedList  {
+public class b_LinkedList_Palindrome_check_  {
 	int n;
 	Node head;
 	Node tail;
 
-	public b_Palindrome_check_DoublyLinkedList() {
+	public b_LinkedList_Palindrome_check_() {
 		int item;
 		head = new Node();
 		tail = new Node();
@@ -62,7 +62,7 @@ public class b_Palindrome_check_DoublyLinkedList  {
 		return result;
 	}
 	public static void main(String[] args) {
-		b_Palindrome_check_DoublyLinkedList dd = new b_Palindrome_check_DoublyLinkedList();
+		b_LinkedList_Palindrome_check_ dd = new b_LinkedList_Palindrome_check_();
 		dd.add(1);
 		dd.add(2);
 		dd.add(2);
