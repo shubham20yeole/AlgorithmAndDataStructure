@@ -104,7 +104,7 @@ public class c_LinkedList_UnionAndIntersection {
 			temp2 = temp2.next;
 			status = false;
 		}
-		System.out.print("Union Result: ");result.print(result);
+		System.out.print("\nUnion Result: ");result.print(result);
 
 
 	}
@@ -113,7 +113,7 @@ public class c_LinkedList_UnionAndIntersection {
 
 		c_LinkedList_UnionAndIntersection object_2 = new c_LinkedList_UnionAndIntersection();
 
-		object_1.add(1);		object_1.add(2);		object_1.add(3);
+		object_1.add(1);		object_1.add(2); object_1.add(88);		object_1.add(3);
 		object_2.add(3);		object_2.add(4);		object_2.add(5); object_2.add(88);
 
 		System.out.print("1st LinkedList: "); object_1.print(object_1);
