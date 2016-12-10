@@ -1,0 +1,10 @@
+Conversion of DataTypes:
+Convert string to int: Integer.parseInt() or Integer.valueOf();
+Convert int to string: Integer.toString(int) or String.valueOf();
+Convert int to long: Long.valueOf(int);
+Convert int to double: (double)int;
+Convert double to int: (int)double;
+Convert String to double: Double.valueOf(String)
+
+Split string by "-" or " " or ","
+String[] newArray = oldString.split("-");

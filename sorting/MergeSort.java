@@ -13,7 +13,7 @@ public class MergeSort {
 	}
 	public static void MergeSORT(int[] a){
 		int al=a.length;
-		if(al<2){
+		if(al < 2){
 			return;
 		}
 		int mid=al/2;
