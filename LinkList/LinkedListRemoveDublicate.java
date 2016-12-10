@@ -7,13 +7,13 @@ package LinkList;
 
 import java.util.HashMap;
 
-public class e_linkedList_RemoveDublicate {
+public class LinkedListRemoveDublicate {
 
 	Node head;
 	Node tail;
 	int n;
 
-	public e_linkedList_RemoveDublicate() {
+	public LinkedListRemoveDublicate() {
 		head = new Node();
 		tail = new Node();
 		head.next = tail;
@@ -88,7 +88,7 @@ public class e_linkedList_RemoveDublicate {
 	}
 
 	public static void main(String[] args) {
-		e_linkedList_RemoveDublicate dd = new e_linkedList_RemoveDublicate();
+		LinkedListRemoveDublicate dd = new LinkedListRemoveDublicate();
 		dd.add(1);
 		dd.add(2);
 		dd.add(7);

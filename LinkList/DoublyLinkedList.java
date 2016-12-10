@@ -1,11 +1,11 @@
 package LinkList;
 
-public class a_DoublyLinkedList  {
+public class DoublyLinkedList  {
 	int n;
 	Node head;
 	Node tail;
 
-	public a_DoublyLinkedList() {
+	public DoublyLinkedList() {
 		int item;
 		head = new Node();
 		tail = new Node();
@@ -41,7 +41,7 @@ public class a_DoublyLinkedList  {
 
 	}
 	public static void main(String[] args) {
-		a_DoublyLinkedList dd = new a_DoublyLinkedList();
+		DoublyLinkedList dd = new DoublyLinkedList();
 		dd.add(1);
 		dd.add(2);
 		dd.add(2);

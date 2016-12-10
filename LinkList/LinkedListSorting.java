@@ -1,13 +1,12 @@
 package LinkList;
 
-import LinkList.b_LinkedList_Palindrome_check_.Node;
 
-public class f_LinkedList_sorting {
+public class LinkedListSorting {
 	Node head;
 	Node tail;
 	int n;
 
-	public f_LinkedList_sorting() {
+	public LinkedListSorting() {
 		head = new Node();
 		tail = new Node();
 		head.next = tail;
@@ -41,7 +40,7 @@ public class f_LinkedList_sorting {
 
 	}
 	public static void main(String[] args) {
-		f_LinkedList_sorting dd = new f_LinkedList_sorting();
+		LinkedListSorting dd = new LinkedListSorting();
 		dd.add(1);
 		dd.add(2);
 		dd.add(66);

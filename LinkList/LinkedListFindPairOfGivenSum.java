@@ -1,13 +1,12 @@
 package LinkList;
 
-import LinkList.a_DoublyLinkedList.Node;
 
-public class g_LinkedList_findPairOfGivenSum {
+public class LinkedListFindPairOfGivenSum {
 	
 	Node head;
 	Node tail;
 	int n;
-	public g_LinkedList_findPairOfGivenSum() {
+	public LinkedListFindPairOfGivenSum() {
 		head = new Node();
 		tail = new Node();
 		head.next = tail;
@@ -61,7 +60,7 @@ public class g_LinkedList_findPairOfGivenSum {
 		
 	}
 	public static void main(String[] args) {
-		g_LinkedList_findPairOfGivenSum dd = new g_LinkedList_findPairOfGivenSum();
+		LinkedListFindPairOfGivenSum dd = new LinkedListFindPairOfGivenSum();
 		dd.add(3);
 		dd.add(6);
 		dd.add(7);

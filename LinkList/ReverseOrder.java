@@ -7,15 +7,13 @@
 
 package LinkList;
 
-import LinkList.b_LinkedList_Palindrome_check_.Node;
-
-public class d_LinkedList_ReverseOrder {
+public class ReverseOrder {
 
 	Node head;
 	Node tail;
 	int n;
 
-	public d_LinkedList_ReverseOrder() {
+	public ReverseOrder() {
 		head = new Node();
 		tail = new Node();
 		head.next = tail;
@@ -58,7 +56,7 @@ public class d_LinkedList_ReverseOrder {
 
 	}
 	public static void main(String[] args) {
-		d_LinkedList_ReverseOrder dd = new d_LinkedList_ReverseOrder();
+		ReverseOrder dd = new ReverseOrder();
 		dd.add(1);
 		dd.add(2);
 		dd.add(3);

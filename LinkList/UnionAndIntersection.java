@@ -13,12 +13,12 @@
 package LinkList;
 
 
-public class c_LinkedList_UnionAndIntersection {
+public class UnionAndIntersection {
 
 	int n;
 	Node head;
 	Node tail;
-	public c_LinkedList_UnionAndIntersection() {
+	public UnionAndIntersection() {
 		head = new Node();
 		tail = new Node();
 		head.next = tail;
@@ -41,7 +41,7 @@ public class c_LinkedList_UnionAndIntersection {
 	}
 	public int getSize(){return n;}
 
-	public void print(c_LinkedList_UnionAndIntersection linkedList){
+	public void print(UnionAndIntersection linkedList){
 		Node printNode = linkedList.head.next;
 		while (printNode != tail)
 		{
@@ -50,11 +50,11 @@ public class c_LinkedList_UnionAndIntersection {
 		}
 		System.out.println();
 	}
-	private static void intersection(c_LinkedList_UnionAndIntersection object_1,
-			c_LinkedList_UnionAndIntersection object_2) {
+	private static void intersection(UnionAndIntersection object_1,
+			UnionAndIntersection object_2) {
 		int length1 = object_1.n;
 		int length2 = object_2.n;
-		c_LinkedList_UnionAndIntersection result = new c_LinkedList_UnionAndIntersection();
+		UnionAndIntersection result = new UnionAndIntersection();
 
 		Node temp = object_1.head.next;
 		for(int i=0;i<length1;i++){
@@ -70,11 +70,11 @@ public class c_LinkedList_UnionAndIntersection {
 		}
 		System.out.print("\nIntersection Result: ");result.print(result);
 	}
-	private static void union(c_LinkedList_UnionAndIntersection object_1,
-			c_LinkedList_UnionAndIntersection object_2) {
+	private static void union(UnionAndIntersection object_1,
+			UnionAndIntersection object_2) {
 		int length1 = object_1.n;
 		int length2 = object_2.n;
-		c_LinkedList_UnionAndIntersection result = new c_LinkedList_UnionAndIntersection();
+		UnionAndIntersection result = new UnionAndIntersection();
 		Node temp = object_1.head.next;
 		Node temp2 = object_2.head.next;
 		for(int i=0;i<length1;i++){
@@ -87,7 +87,7 @@ public class c_LinkedList_UnionAndIntersection {
 
 		for(int i=0;i<=length2;i++){
 			int no = temp2.data;
-			c_LinkedList_UnionAndIntersection object_3 = new c_LinkedList_UnionAndIntersection();
+			UnionAndIntersection object_3 = new UnionAndIntersection();
 			object_3 = object_1;
 			Node temp3 = object_3.head.next;
 
@@ -109,9 +109,9 @@ public class c_LinkedList_UnionAndIntersection {
 
 	}
 	public static void main(String[] args) {
-		c_LinkedList_UnionAndIntersection object_1 = new c_LinkedList_UnionAndIntersection();
+		UnionAndIntersection object_1 = new UnionAndIntersection();
 
-		c_LinkedList_UnionAndIntersection object_2 = new c_LinkedList_UnionAndIntersection();
+		UnionAndIntersection object_2 = new UnionAndIntersection();
 
 		object_1.add(1);		object_1.add(2); object_1.add(88);		object_1.add(3);
 		object_2.add(3);		object_2.add(4);		object_2.add(5); object_2.add(88);
